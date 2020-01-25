@@ -14,14 +14,12 @@ namespace Ex03.UI
 
         public BestFanForm (User i_LoggedInUser)
         {
-           
             this.InitializeComponent();
             this.LoggedInUser = i_LoggedInUser;
             Client = new Client(i_LoggedInUser, this.userBindingSource);
             initCheckBox();
             initializeCheckBoxItems();
         }
-
 
         public User LoggedInUser { get => m_LoggedInUser; set => m_LoggedInUser = value; }
 
@@ -34,7 +32,6 @@ namespace Ex03.UI
                 new BestFanItems {Text = "Photos Liker"  ,Command = m_Client.GetYourBestPhotosFan},
                 new BestFanItems {Text = "Posts Liker" , Command = m_Client.GetYourBestPostFan }
             };
-
         }
 
         private void initializeCheckBoxItems()
@@ -43,7 +40,6 @@ namespace Ex03.UI
             {
                 this.checkedListBoxParametersOfFan1.Items.Add(item.Text);
             }
-            
         }
 
 
@@ -67,7 +63,6 @@ namespace Ex03.UI
                     MessageBox.Show(ex.Message);
                 }
             }
-
         }
 
         private void checkedListBoxParametersOfFan1_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,6 +79,4 @@ namespace Ex03.UI
             checkedListBoxParametersOfFan1.SetItemCheckState(isSelectedItem, CheckState.Checked);
         }
     }
-    
-
 }

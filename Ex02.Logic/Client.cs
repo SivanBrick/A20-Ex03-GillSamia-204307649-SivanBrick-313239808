@@ -26,11 +26,15 @@ namespace Ex03.Logic
         {
           
             Dictionary<User, int> friendsLikes = new Dictionary<User, int>();
+            int maxItemsToSearchBy = 150;
+            PhotoIterator userPhotos = new PhotoIterator(m_LoggedInUser.Albums);
+            var photoEnumerator = userPhotos.GetEnumerator(maxItemsToSearchBy);
+
             try
             {
-                foreach (Photo photo in LoggedInUser.PhotosTaggedIn)
+                while (photoEnumerator.MoveNext())
                 {
-                    foreach (User whoLike in photo.LikedBy)
+                    foreach (User whoLike in photoEnumerator.Current.LikedBy)
                     {
                         if (friendsLikes.ContainsKey(whoLike))
                         {
@@ -43,6 +47,7 @@ namespace Ex03.Logic
                     }
                 }
             }
+
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
@@ -55,7 +60,7 @@ namespace Ex03.Logic
         public void GetYourBestPostFan()
         {
             Dictionary<User, int> friendsLikes = new Dictionary<User, int>();
-
+            
             try
             {
                 foreach (Post userPost in this.LoggedInUser.Posts)
