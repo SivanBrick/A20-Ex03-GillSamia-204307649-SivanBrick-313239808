@@ -18,13 +18,15 @@ namespace Ex03.Logic
             this.ZodiacHoroscop = this.Horoscope[this.ZodiacSign];
         }
 
-        public Dictionary<string, string> Horoscope { get; set; }
 
-        public string ZodiacHoroscop { get; set; }
 
-        public string ZodiacSign { get; set; }
-        
-        public DateTime Birthday { get; set; }
+        public Dictionary<string, string> Horoscope { get => m_Horoscope; set => m_Horoscope = value; }
+
+        public string ZodiacHoroscop { get => m_ZodiacHoroscop; set => m_ZodiacHoroscop = value; }
+
+        public string ZodiacSign { get => m_ZodiacSign; set => m_ZodiacSign = value; }
+
+        public DateTime Birthday { get => m_Birthday; set => m_Birthday = value; }
 
         public static string GetZodiacSign(DateTime io_userBirthdaydate)
         {
