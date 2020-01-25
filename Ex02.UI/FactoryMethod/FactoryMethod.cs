@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
-namespace Ex02.UI
+namespace Ex03.UI
 {
     internal class FactoryMethod
     {

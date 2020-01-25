@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Forms;
-using Ex02.Logic;
+using Ex03.Logic;
 using FacebookWrapper.ObjectModel;
 
-namespace Ex02.UI
+namespace Ex03.UI
 {
     public partial class ZodiacMatchForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Ex02.UI
+﻿namespace Ex03.UI
 {
     partial class ZodiacMatchForm
     {
@@ -91,7 +91,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Ex02.UI.Properties.Resources._640px_Zodiac__PSF_;
+            this.pictureBox6.Image = global::Ex03.UI.Properties.Resources._640px_Zodiac__PSF_;
             this.pictureBox6.Location = new System.Drawing.Point(266, -37);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(523, 525);

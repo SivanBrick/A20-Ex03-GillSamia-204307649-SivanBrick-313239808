@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ex02.UI.Properties {
+namespace Ex03.UI.Properties {
     using System;
     
     

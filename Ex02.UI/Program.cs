@@ -4,7 +4,7 @@ using FacebookWrapper;
 
 
 
-namespace Ex02.UI
+namespace Ex03.UI
 {
     public class Program
     {

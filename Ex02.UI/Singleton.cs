@@ -2,7 +2,7 @@
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 
-namespace Ex02.UI
+namespace Ex03.UI
 {
     public sealed class Singleton
     {

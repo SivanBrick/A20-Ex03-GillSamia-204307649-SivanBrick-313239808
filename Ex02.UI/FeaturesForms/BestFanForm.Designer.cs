@@ -1,4 +1,4 @@
-﻿namespace Ex02.UI
+﻿namespace Ex03.UI
 {
     partial class BestFanForm
     {
@@ -155,7 +155,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Ex02.UI.Properties.Resources.like_box;
+            this.pictureBox1.Image = global::Ex03.UI.Properties.Resources.like_box;
             this.pictureBox1.Location = new System.Drawing.Point(44, 206);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 154);
@@ -165,7 +165,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Ex02.UI.Properties.Resources.small_facebook_like_icon_26;
+            this.pictureBox2.Image = global::Ex03.UI.Properties.Resources.small_facebook_like_icon_26;
             this.pictureBox2.Location = new System.Drawing.Point(168, 34);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(101, 91);
@@ -175,7 +175,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Ex02.UI.Properties.Resources.small_facebook_like_icon_26;
+            this.pictureBox3.Image = global::Ex03.UI.Properties.Resources.small_facebook_like_icon_26;
             this.pictureBox3.Location = new System.Drawing.Point(525, 34);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(101, 91);
@@ -185,7 +185,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Ex02.UI.Properties.Resources.like_box;
+            this.pictureBox4.Image = global::Ex03.UI.Properties.Resources.like_box;
             this.pictureBox4.Location = new System.Drawing.Point(589, 206);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(180, 154);
