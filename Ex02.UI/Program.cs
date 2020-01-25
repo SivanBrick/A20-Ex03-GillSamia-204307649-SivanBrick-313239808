@@ -4,10 +4,6 @@ using FacebookWrapper;
 
 
 
-// $G$ THE-001 (-7) your grade on diagrams document - 93. please see comments inside the document. (50% of your grade).
-
-
-
 namespace Ex02.UI
 {
     public class Program
