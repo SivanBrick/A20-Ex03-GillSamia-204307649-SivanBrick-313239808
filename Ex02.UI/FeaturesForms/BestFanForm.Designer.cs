@@ -87,14 +87,12 @@
             // 
             this.checkedListBoxParametersOfFan1.BackColor = System.Drawing.Color.SteelBlue;
             this.checkedListBoxParametersOfFan1.FormattingEnabled = true;
-            this.checkedListBoxParametersOfFan1.Items.AddRange(new object[] {
-            "photos",
-            "posts"});
             this.checkedListBoxParametersOfFan1.Location = new System.Drawing.Point(332, 83);
             this.checkedListBoxParametersOfFan1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBoxParametersOfFan1.Name = "checkedListBoxParametersOfFan1";
-            this.checkedListBoxParametersOfFan1.Size = new System.Drawing.Size(141, 46);
+            this.checkedListBoxParametersOfFan1.Size = new System.Drawing.Size(141, 27);
             this.checkedListBoxParametersOfFan1.TabIndex = 24;
+            this.checkedListBoxParametersOfFan1.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxParametersOfFan1_SelectedIndexChanged);
             // 
             // panelBestPhotosFan1
             // 
@@ -131,7 +129,6 @@
             // findTheBestFanButton1
             // 
             this.findTheBestFanButton1.BackColor = System.Drawing.Color.SteelBlue;
-            this.findTheBestFanButton1.Enabled = true;
             this.findTheBestFanButton1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.findTheBestFanButton1.Location = new System.Drawing.Point(255, 136);
             this.findTheBestFanButton1.Name = "findTheBestFanButton1";
@@ -193,7 +190,7 @@
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
             // 
-            // BestFan
+            // BestFanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +208,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "BestFan";
+            this.Name = "BestFanForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Best Fan";
             this.panelBestPhotosFan1.ResumeLayout(false);

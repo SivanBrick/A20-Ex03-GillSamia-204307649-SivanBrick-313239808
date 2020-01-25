@@ -9,48 +9,58 @@ namespace Ex03.UI
     public partial class BestFanForm : Form
     {
         private User m_LoggedInUser;
-        private Facade m_Facade;
+        private Ex03.Logic.Client m_Client;
+        private List<BestFanItems> m_CheckBoxParametersOfFan;
 
         public BestFanForm (User i_LoggedInUser)
         {
+           
             this.InitializeComponent();
             this.LoggedInUser = i_LoggedInUser;
-            Facade = new Facade(i_LoggedInUser, this.userBindingSource);
+            Client = new Client(i_LoggedInUser, this.userBindingSource);
+            initCheckBox();
+            initializeCheckBoxItems();
         }
 
-        public User LoggedInUser { get; set; }
 
-        public Facade Facade { get; set; }
+        public User LoggedInUser { get => m_LoggedInUser; set => m_LoggedInUser = value; }
+
+        public Client Client { get => m_Client; set => m_Client = value; }
+
+        private void initCheckBox()
+        {
+            m_CheckBoxParametersOfFan = new List<BestFanItems>()
+            {
+                new BestFanItems {Text = "Photos Liker"  ,Command = m_Client.GetYourBestPhotosFan},
+                new BestFanItems {Text = "Posts Liker" , Command = m_Client.GetYourBestPostFan }
+            };
+
+        }
+
+        private void initializeCheckBoxItems()
+        {
+            foreach (BestFanItems item in m_CheckBoxParametersOfFan)
+            {
+                this.checkedListBoxParametersOfFan1.Items.Add(item.Text);
+            }
+            
+        }
+
 
         private void FindTheBestFanButton_Click(object sender, EventArgs e)
         {
-            List<string> parametersToCheck = new List<string>();
-            
-            for (int i = 0; i < this.checkedListBoxParametersOfFan1.Items.Count; i++)
-            {
-                if (this.checkedListBoxParametersOfFan1.GetItemChecked(i))
-                {
-                    parametersToCheck.Add(this.checkedListBoxParametersOfFan1.Items[i].ToString());
-                }
-            }
+            int isSelected = this.checkedListBoxParametersOfFan1.SelectedIndex;
 
-            if (parametersToCheck.Count == 0)
+
+            if (isSelected == -1)
             {
                 MessageBox.Show("You must chose at least on option");
-            }
-            else if (parametersToCheck.Contains("photos") && this.LoggedInUser.PhotosTaggedIn.Count == 0)
-            {
-                MessageBox.Show("Sorry, you don't have any photos - you can't play this game :(");
-            }
-            else if (parametersToCheck.Contains("posts") && this.LoggedInUser.Posts.Count == 0)
-            {
-                MessageBox.Show("Sorry, you don't have any posts - you can't play this game :(");
             }
             else
             {
                 try
                 {
-                    this.Facade.FindYourBestFan(parametersToCheck);
+                    m_CheckBoxParametersOfFan[isSelected - 1].Selected();
                 }
                 catch (Exception ex)
                 {
@@ -58,7 +68,22 @@ namespace Ex03.UI
                 }
             }
 
-            parametersToCheck.Clear();
+        }
+
+        private void checkedListBoxParametersOfFan1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int isSelectedItem = this.checkedListBoxParametersOfFan1.SelectedIndex;
+            if (isSelectedItem == -1)
+            {
+                return;
+            }
+            for (int i = 0; i < checkedListBoxParametersOfFan1.Items.Count; i++)
+            {
+                this.checkedListBoxParametersOfFan1.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            checkedListBoxParametersOfFan1.SetItemCheckState(isSelectedItem, CheckState.Checked);
         }
     }
+    
+
 }
