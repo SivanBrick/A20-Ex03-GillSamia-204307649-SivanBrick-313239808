@@ -47,12 +47,12 @@ namespace Ex03.UI
         }
 
 
-        private void FindTheBestFanButton_Click(object sender, EventArgs e)
+        private void findTheBestFanButton_Click(object sender, EventArgs e)
         {
-            int isSelected = this.checkedListBoxParametersOfFan1.SelectedIndex;
+            int selectedItem = this.checkedListBoxParametersOfFan1.SelectedIndex;
 
 
-            if (isSelected == -1)
+            if (selectedItem == -1)
             {
                 MessageBox.Show("You must chose at least on option");
             }
@@ -60,7 +60,7 @@ namespace Ex03.UI
             {
                 try
                 {
-                    m_CheckBoxParametersOfFan[isSelected].Selected();
+                    m_CheckBoxParametersOfFan[selectedItem].Selected();
                 }
                 catch (Exception ex)
                 {
@@ -72,8 +72,8 @@ namespace Ex03.UI
 
         private void checkedListBoxParametersOfFan1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int isSelectedItem = this.checkedListBoxParametersOfFan1.SelectedIndex;
-            if (isSelectedItem == -1)
+            int selectedItem = this.checkedListBoxParametersOfFan1.SelectedIndex;
+            if (selectedItem == -1)
             {
                 return;
             }
@@ -81,7 +81,7 @@ namespace Ex03.UI
             {
                 this.checkedListBoxParametersOfFan1.SetItemCheckState(i, CheckState.Unchecked);
             }
-            checkedListBoxParametersOfFan1.SetItemCheckState(isSelectedItem, CheckState.Checked);
+            checkedListBoxParametersOfFan1.SetItemCheckState(selectedItem, CheckState.Checked);
         }
     }
     

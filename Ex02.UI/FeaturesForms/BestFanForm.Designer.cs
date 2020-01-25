@@ -136,7 +136,7 @@
             this.findTheBestFanButton1.TabIndex = 22;
             this.findTheBestFanButton1.Text = "Click here to find your best fan";
             this.findTheBestFanButton1.UseVisualStyleBackColor = false;
-            this.findTheBestFanButton1.Click += new System.EventHandler(this.FindTheBestFanButton_Click);
+            this.findTheBestFanButton1.Click += new System.EventHandler(this.findTheBestFanButton_Click);
             // 
             // label4
             // 
