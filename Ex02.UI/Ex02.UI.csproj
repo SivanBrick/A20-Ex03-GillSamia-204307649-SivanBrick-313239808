@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9B0CC1A-8627-4A36-AD74-60CF9FD4EADD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ex02.UI</RootNamespace>
+    <AssemblyName>Ex02.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\Documents\לימודים\שנה ג\design\01_FB01_BasicFacebookFeatures.V6.8.0.18\FBBasicFacebookFeatures\bin\Debug\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\..\Documents\לימודים\שנה ג\design\01_FB01_BasicFacebookFeatures.V6.8.0.18\FBBasicFacebookFeatures\bin\Debug\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeaturesForms\BestFanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeaturesForms\BestFanForm.Designer.cs">
+      <DependentUpon>BestFanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FactoryMethod\eFacebookFeatures.cs" />
+    <Compile Include="FactoryMethod\FactoryMethod.cs" />
+    <Compile Include="FeaturesForms\ZodiacMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeaturesForms\ZodiacMatchForm.Designer.cs">
+      <DependentUpon>ZodiacMatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton.cs" />
+    <Compile Include="FacebookTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacebookTabs.Designer.cs">
+      <DependentUpon>FacebookTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FeaturesForms\BestFanForm.resx">
+      <DependentUpon>BestFanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacebookTabs.resx">
+      <DependentUpon>FacebookTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FeaturesForms\ZodiacMatchForm.resx">
+      <DependentUpon>ZodiacMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640px-Zodiac_%28PSF%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f0df0e46c2cb48b6bea2aab0b1b0ad19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-button-click-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-button-png-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small-facebook-like-icon-26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הורדה.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הורדה - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small-facebook-like-icon-26 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-button-png-7 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-button-click-512 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like-box - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ex02.Logic\Ex02.Logic.csproj">
+      <Project>{35959e1a-3015-4aab-b4b9-02ec2b47db05}</Project>
+      <Name>Ex02.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
