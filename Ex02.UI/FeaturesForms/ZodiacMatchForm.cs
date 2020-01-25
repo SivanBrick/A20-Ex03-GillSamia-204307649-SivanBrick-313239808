@@ -10,8 +10,7 @@ namespace Ex03.UI
     {
         private User m_LoggedInUser;
         private ZodiacSignManager m_MyZodiac;
-        private string m_ErrorMsg = "OPPS! Something went wrong..";
-
+        private ZodiacMethod m_ZodiacMethod;
         public ZodiacMatchForm(User i_LoggedInUser)
         {
             this.InitializeComponent();
@@ -26,6 +25,10 @@ namespace Ex03.UI
                     this.userZodiacSignLabel1.Text = this.MyZodiac.ZodiacSign;
                     this.zodiacHoroscopBox1.Text = this.MyZodiac.ZodiacHoroscop;
                 }
+
+                ZodiacMethod zodiacMethod = new ZodiacMethod(fetchFriendsWithTheSameZodiacSign);
+                m_ZodiacMethod = zodiacMethod;
+                
             }
             catch (Exception ex)
             {
@@ -40,9 +43,27 @@ namespace Ex03.UI
 
         public ZodiacSignManager MyZodiac { get; set; }
 
-        public string ErrorMsg { get; set; }
+        private void FindMatchButton1_Click(object sender, EventArgs e)
+        {
+            m_ZodiacMethod.FindZodiacMatch();
+        }
 
-        private void fetchZodiacSignFriends()
+        public class ZodiacMethod
+        {
+            public Action SerchMethod { get; set; }
+
+            public ZodiacMethod(Action i_SearchMethod)
+            {
+                SerchMethod = i_SearchMethod;
+            }
+
+            public void FindZodiacMatch()
+            {
+                SerchMethod.Invoke();
+            }
+        }
+
+        private void fetchFriendsWithTheSameZodiacSign()
         {
             try
             {
@@ -77,13 +98,8 @@ namespace Ex03.UI
             }
             catch (Exception ex)
             {
-                this.listBoxFriendsSign1.Items.Add(string.Format("{0}..\n{1}", this.ErrorMsg, ex));
+                this.listBoxFriendsSign1.Items.Add(string.Format("{0}..\n{1}", "Something went wrong..", ex));
             }
-        }
-
-        private void FindMatchButton1_Click(object sender, EventArgs e)
-        {
-            this.fetchZodiacSignFriends();
         }
     }
 }

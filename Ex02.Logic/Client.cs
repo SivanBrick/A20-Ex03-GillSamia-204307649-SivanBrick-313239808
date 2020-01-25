@@ -97,6 +97,7 @@ namespace Ex03.Logic
             {
                 this.BindingSource.DataSource = m_BestFan;
             }
+
         }
     }
 }
