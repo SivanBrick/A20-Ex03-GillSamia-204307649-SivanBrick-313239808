@@ -1,0 +1,9 @@
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\bin\Debug\Ex03.Logic.dll.config
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\bin\Debug\Ex03.Logic.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\bin\Debug\Ex03.Logic.pdb
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\bin\Debug\Facebook.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\obj\Debug\Ex03.Logic.csprojAssemblyReference.cache
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\obj\Debug\Ex03.Logic.csproj.CopyComplete
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\obj\Debug\Ex03.Logic.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.Logic\obj\Debug\Ex03.Logic.pdb

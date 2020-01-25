@@ -1,0 +1,17 @@
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Ex03.UI.exe
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Ex03.UI.pdb
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Ex03.Logic.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Facebook.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Ex03.Logic.pdb
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\bin\Debug\Ex03.Logic.dll.config
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.csprojAssemblyReference.cache
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.BestFanForm.resources
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.FacebookTabs.resources
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.LoginForm.resources
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.Properties.Resources.resources
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.ZodiacMatchForm.resources
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.csproj.GenerateResource.cache
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.csproj.CopyComplete
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.exe
+C:\Users\סיוון\Documents\לימודים\שנה ג\design\A20-Ex03-GillSamia-204307649-SivanBrick-313239808\Ex02.UI\obj\Debug\Ex03.UI.pdb
