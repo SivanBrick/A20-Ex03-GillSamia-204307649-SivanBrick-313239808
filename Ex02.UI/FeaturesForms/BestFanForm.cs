@@ -60,7 +60,7 @@ namespace Ex03.UI
             {
                 try
                 {
-                    m_CheckBoxParametersOfFan[isSelected - 1].Selected();
+                    m_CheckBoxParametersOfFan[isSelected].Selected();
                 }
                 catch (Exception ex)
                 {
